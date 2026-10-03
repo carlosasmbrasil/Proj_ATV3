@@ -18,7 +18,11 @@ form.addEventListener("submit", function(event) {
     } else {
         tempoAposentar = 65 - idade;
     }
-    tempoAposentar = tempoAposentar + " anos";
+    if (tempoAposentar < 0) {
+        tempoAposentar = "0 anos";
+    } else {
+        tempoAposentar = tempoAposentar + " anos";
+    }
 
     const registro = { nome, idade, nacionalidade, sexo, tempoAposentar };
     registros.push(registro);
