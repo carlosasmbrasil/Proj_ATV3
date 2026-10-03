@@ -10,8 +10,7 @@ form.addEventListener("submit", function(event) {
     const nome = document.getElementById("nome").value;
     const idade = parseInt(document.getElementById("idade").value);
     const nacionalidade = document.getElementById("nacionalidade").value;
-    const sexo = document.getElementById("sexo").value;
-    
+    const sexo = document.getElementById("sexo").value;    
 
     let tempoAposentar = 0;
     if (sexo === "Feminino") {
